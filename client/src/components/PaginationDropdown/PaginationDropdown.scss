@@ -1,0 +1,31 @@
+#custom-dropdown {
+    margin-top: -8px;
+}
+#custom-button {
+    background-color: transparent;
+    border: none;
+    color: grey;
+    &:hover {
+        background:white;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    &:active {
+        background-color: white;
+        box-shadow: none;
+    }
+    &::after {
+        margin-left: 1.2em;
+        color: black;
+    }
+}
+
+#custom-menu {
+    a {
+        &:active {
+            background-color: grey;
+        }
+    }
+}

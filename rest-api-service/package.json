@@ -1,0 +1,19 @@
+{
+  "name": "rest-api-service",
+  "version": "1.0.0",
+  "description": "REST API",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest test",
+    "start": "node server.js"
+  },
+  "author": "Shakeel Mohammed",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.907.0",
+    "aws-sdk-mock": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1"
+  }
+}

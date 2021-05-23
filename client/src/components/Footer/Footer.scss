@@ -1,0 +1,25 @@
+footer {
+    border-top: 1px solid rgb(216, 216, 216);
+    padding-top: 60px;
+    height: 300px;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: none;
+
+    li {
+        display: inline;
+        padding: 20px;
+    }
+    
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+        font-size: 0.75rem;
+        li {
+            display: inline;
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+# Client package directories
+./client/node_modules/**
+./client/build/**
+
+# Rest Service package directories
+./rest-api-service/node_modules/**

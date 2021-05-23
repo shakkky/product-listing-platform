@@ -1,0 +1,22 @@
+.pagination {
+    font-size: small;
+    .page-link {
+        background-color: transparent;
+        color: black;
+        border: none;
+    }
+    .page-item.active {
+        .page-link {
+            background-color: white;
+            color: black;
+            border-bottom: 2px solid black;
+        }
+    }
+    .page-item.disabled {
+        .page-link {
+            background-color: transparent;
+            color: lightgray;
+            border: none;
+        }
+    }
+}
