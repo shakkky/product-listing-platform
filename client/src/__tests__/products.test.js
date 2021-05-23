@@ -12,7 +12,7 @@ describe('async action tests', () => {
   it('creates FETCH_PRODUCTS_SUCCESS when fetching products has been done', () => {
     const testProducts = [{"id":1,"price":"$87.68","product_name":"Amitriptyline Hydrochloride","description":"synergize efficient metrics","product_image":"http://dummyimage.com/307x328.bmp/ff4444/ffffff"}];
     const mockResponse = {
-        data: { body: testProducts },
+        data: { body: { Items: testProducts } },
         headers: { 'content-type': 'application/json' }
     };
     axios.get.mockImplementationOnce(() => Promise.resolve(mockResponse));

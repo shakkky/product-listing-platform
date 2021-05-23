@@ -6,7 +6,7 @@ import './NotFound.scss';
 const NotFound = () => {
   return (
     <div>
-      <section>
+      <section className="col">
         <div className="header">
           <img src={logo} alt="logo"/>
           <h1>Oops, looks like there was a problem</h1>

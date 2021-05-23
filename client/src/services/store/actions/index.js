@@ -6,7 +6,7 @@ export const fetchProducts = () => {
             const resp = await axios.get(`http://localhost:3001/api/products`);
             dispatch({
                 type: 'FETCH_PRODUCTS_SUCCESS',
-                payload: resp.data.body
+                payload: resp.data.body.Items
             });
         } catch (error) {
             dispatch({

@@ -9,7 +9,7 @@ const productHandler = async (event) => {
     console.log(`Item Retrieved: ${JSON.stringify(dbRes)}`);
 
     // Response
-    return formatResponse(dbRes);
+    return formatResponse({ Items: dbRes });
   } catch (e){
 
     // an error has occured. Log the error

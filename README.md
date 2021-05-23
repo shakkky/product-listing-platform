@@ -46,7 +46,7 @@
 
 ![Product Name Screen Shot][product-screenshot]
 
-This a simply product listing platform for fictional business - Product.io.
+This a simple product listing platform for a fictional business - Product.io.
 
 The user flow of the module is as follows:
 * A user is presented with a product page and is ready to start browsing. 
@@ -68,11 +68,11 @@ The application has been built to be run locally in Docker containers, and as se
 
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+To get a local running follow these simple steps.
 
 ### Prerequisites, Installation & Setup
 
-This is an example of how to list things you need to use the software and how to install them:
+This is an example of how to list things you need to use the application and how to install them:
 - Ensure Docker is installed on local machine:
     ```sh
     docker version
@@ -109,7 +109,7 @@ Note, here are a few commands that are useful for viewing DynamoDB table running
     ```
 
 ### Jest Tests
-Jest Tests are run automatically and must pass during the build phase.
+Jest Tests are run automatically during the docker-compose build phase.
 Passed tests:
   ```
   PASS  src/__tests__/pagination.test.js
@@ -123,12 +123,12 @@ Passed tests:
   ```
 
 ## Roadmap
-There are a few improvements I would like to make:
-* Local environment setup optimization - Currently, when the service has just been spun up for the first time on a computer, the DB takes a few seconds to populate (due to the number of records, we see connection pool warnings from localstack). Due to this wait time, the REST service returns a sub-set of product items. I would like to optimize this mechanism.
-* Implement a pipeline for deployment to AWS. I have achieve this in the past using Serverless framework to deploy a react app to an S3 CDN, Lambda REST service, and DynamoDB persistence layer. See here: https://github.com/shakkky/gym-time-platform
+There are a few improvements I'd like to make:
+* Local environment setup optimization - I see room for improvement on the mechanism used to populate the LocalStack DynamoDB table for local development. Currently, when the service is spun up for the first time, it takes a few seconds for the DB to populate, and we see connection pool warnings due to the high number of write-requests to the LocalStack service. Due to this wait time, it takes a few seconds before products are visible on the front end.
+* Implement a pipeline for deployment to AWS. I have achieved this in the past using Serverless framework to deploy a react app to an S3 CDN, Lambda REST service, and DynamoDB persistence layer. See here: https://github.com/shakkky/gym-time-platform
 * Use supertest to simluate HTTP requests during testing to run more service-level/functional tests.
 * Use Jest or Selenium to implement functional testing of the front end.
-* Implement pagination in the REST layer. The records are currently returned as one chunk. This has the potential to cause latency, whuch I consider as an important issue.
+* Implement pagination in the REST layer. The records are currently returned as one chunk. This mechanism has the potential to cause latency.
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
