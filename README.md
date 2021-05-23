@@ -124,7 +124,7 @@ Passed tests:
 
 ## Roadmap
 There are a few improvements I would like to make:
-* Local environment setup optimization - Currently, when the service has just been spun up for the first time on a computer, the DB takes a few seconds to populate (due to the number of records). Due to this wait time, the REST service returns a sub-set of product items. I would like to optimize this mechanism.
+* Local environment setup optimization - Currently, when the service has just been spun up for the first time on a computer, the DB takes a few seconds to populate (due to the number of records, we see connection pool warnings from localstack). Due to this wait time, the REST service returns a sub-set of product items. I would like to optimize this mechanism.
 * Implement a pipeline for deployment to AWS. I have achieve this in the past using Serverless framework to deploy a react app to an S3 CDN, Lambda REST service, and DynamoDB persistence layer. See here: https://github.com/shakkky/gym-time-platform
 * Use supertest to simluate HTTP requests during testing to run more service-level/functional tests.
 * Use Jest or Selenium to implement functional testing of the front end.
