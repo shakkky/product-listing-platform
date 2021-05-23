@@ -70,7 +70,7 @@ The application has been built to be run locally in Docker containers, and as se
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+### Prerequisites, Installation & Setup
 
 This is an example of how to list things you need to use the software and how to install them:
 - Ensure Docker is installed on local machine:
@@ -79,9 +79,7 @@ This is an example of how to list things you need to use the software and how to
     ```
     If Docker is not installed, follow [these](https://docs.docker.com/get-docker) steps.
 
-### Installation & Setup
-
-1. Clone the repo
+- Clone the repo
     ```sh
     git clone https://github.com/shakkky/product-listing-platform.git
     ```
