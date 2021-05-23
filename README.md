@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/shakkky/product-listing-platform">
-    <img src="images/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="images/logo.jpg" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">Product.io Platform</h3>
